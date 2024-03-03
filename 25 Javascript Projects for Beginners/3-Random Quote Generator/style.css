@@ -1,0 +1,45 @@
+body {
+    background: #06bcc1;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto; /* Sayfa ortalanır */
+}
+
+.quotes {
+    border: 1px solid black;
+    width: 80%; /* Orjinal 900px'den 80%'e düzenlendi */
+    max-width: 900px; /* Maksimum genişlik belirlendi */
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: gray;
+    background-color: #f4edea;
+    border: 10px solid #f4d1ae;
+}
+
+.quotes p, .quotes h3 {
+    font-size: 1.5rem;
+    margin: 0; /* Paragraf ve başlıkların varsayılan margin'ı sıfırlandı */
+}
+
+@media (max-width: 480px) {
+    .quotes {
+        width: 90%; /* Ekran daraldığında genişliği biraz daha azaltıldı */
+    }
+
+    .quotes p, .quotes h3 {
+        font-size: 1rem;
+    }
+}
